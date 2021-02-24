@@ -2,8 +2,8 @@ TEMPLATE = app
 
 QT += widgets
 
-SOURCES += main.cpp qclip.cpp
-HEADERS += qclip.h
+SOURCES += src/main.cpp src/qclip.cpp
+HEADERS += src/qclip.h
 
 MOC_DIR = build
 OBJECTS_DIR = build
