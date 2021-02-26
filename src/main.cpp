@@ -20,6 +20,10 @@ int main(int argc, char** argv)
         return app.exec();
     }
     
+    for(int i = 0; i < argc; i++) if( std::string(argv[i]) == std::string("-o")) {
+        qclip Qclip(&app);
+        return app.exec();
+        }
     
     qclip Qclip(&app, argv[1]);
 

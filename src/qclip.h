@@ -11,6 +11,7 @@ class qclip : public QObject {
     Q_OBJECT
     
 public:
+    qclip(QGuiApplication *app);
     qclip(QGuiApplication *app, QString texto);
 };
 
