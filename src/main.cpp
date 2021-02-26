@@ -14,6 +14,9 @@ int main(int argc, char** argv)
     std::string str;
     std::string entrada;
     
+    /** read piped input.
+      * @fix-me: return if no input was piped
+      */
     if(argc == 1){
         while(std::getline(std::cin, str, '\n')) entrada += str + "\n";
         qclip Qclip(&app, entrada.c_str());
